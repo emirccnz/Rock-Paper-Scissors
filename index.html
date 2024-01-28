@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock-Paper-Scissors</title>
+</head>
+<body>
+    <div class="container" id="container1">
+        <div class="startGameBox">
+            <div class="choices">
+                <img src="images/rock.png" alt="rock">
+            </div>
+            <div class="choices">
+                <img src="images/pngwing.com (6).png" alt="paper">
+            </div>
+            <div class="choices">
+                <img src="images/scissors.png" alt="scissors">
+            </div>
+            <button class="startGameButton" id="startGameButton">
+                Start Game
+            </button>
+        </div>
+    </div>
+    <div class="container" id="container2">
+        <div class="gameDiv">
+            <h1 id="youH1">You <br></h1><section id="playerScoreSec"><h1 id="scorePlayerH1">0</h1></section>
+            <div class="gameDivPlayer">
+                <div class="emptyDiv"></div>
+                <div class="bigImgDiv">
+                    <img src="images/rock.png" alt="choosing" id="choosing">
+                    <img src="" alt="choosed" id="choosed">
+                </div>
+                <div class="otherImgDiv" id="otherImgDiv">
+                    <div class="choices2">
+                        <img src="images/rock.png" alt="" class="otherImgs">
+                    </div>
+                    <div class="choices2">
+                        <img src="images/pngwing.com (6).png" alt="" class="otherImgs">
+                    </div>
+                    <div class="choices2">
+                        <img src="images/scissors.png" alt="" class="otherImgs">
+                    </div>
+                </div>
+            </div>
+
+            <h1 id="robotH1">Robot <br></h1><section id="robotScoreSec"><h1 id="scoreRobotH1">0</h1></section>
+            <div class="gameDivRobot" id="gameDivRobot">
+                <div class="emptyDiv"></div>
+                <div class="bigImgDiv">
+                    <img src="images/rock.png" alt="choosed" id="choosing2">
+                    <img src="" alt="" id="choosed2">
+                </div>
+                <div class="otherImgDiv" style="visibility: hidden;">
+                    <div class="choices2">
+                        <img src="images/rock.png" alt="" class="otherImgs">
+                    </div>
+                    <div class="choices2">
+                        <img src="images/pngwing.com (6).png" alt="" class="otherImgs">
+                    </div>
+                    <div class="choices2">
+                        <img src="images/scissors.png" alt="" class="otherImgs">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="finishGame">
+            <button id="finishGameButton">Finish Game</button>
+        </div>
+    </div>
+    <div class="container" id="container3">
+        <div class="finishedGameBox">
+            <h1 id="whoWins">You Win!</h1>
+            <div class="playersScoreDiv">
+                <h1>Your Score</h1>
+                <h1 id="finishedPlayerSc">3</h1>
+            </div>
+            <div class="robotsScoreDiv">
+                <h1>Robot's Score</h1>
+                <h1 id="finishedRobotSc">3</h1>
+            </div>
+            <button id="playAgainButton">Play Again</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

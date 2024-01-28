@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Lemon&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Lemon', serif;
+}
+html{
+    font-size: 10px;
+}
+h1{
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+}
+.a2ndH1,.a2ndSection{
+    display: none;
+}
+.container{
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.container:nth-child(2){
+    flex-direction: column;
+}
+
+.startGameBox{
+    height: 40rem;
+    background: linear-gradient(to right, #cdb4db,#ffc8dd ,#ffafcc);
+    width: 35rem;
+    border-radius: 20px;
+    border: 3px solid #fff;
+}
+.choices{
+    display: inline-block;
+    width: 10rem;
+    background-color:aqua;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 2rem 3.4rem;
+    border: 3px solid white;
+    background: linear-gradient(to right, #bde0fe ,#5d5dfb);
+}
+.choices:nth-child(3){
+    margin: 1rem 12.4rem;
+}
+.choices img{
+    width: 90%;
+}
+.choices:nth-child(1) img{
+    width: 80%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.choices:nth-child(2) img {
+    width: 80%;
+    margin-left: 1rem;
+}
+.choices:nth-child(1){
+    transform: translateY(0.7rem);
+}
+.choices:nth-child(3) img{
+    width: 85%;
+    margin-top: 1.8rem;
+    margin-left: 0.5rem;
+}
+.startGameButton{
+    margin: 3rem 10.5rem;
+    width: 14rem;
+    height: 4.0rem;
+    background: linear-gradient(to right, rgb(249, 66, 255),rgb(178, 45, 183) ,#5d5dfb);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.5rem;
+    border: 2px solid #fff;
+}
+.startGameButton:hover{
+    transition: 0.3s;
+    height: 5rem;
+    width: 15rem;
+    margin: 2.9rem 10.3rem;
+    font-size: 1.4rem;
+    background: none;
+    background-color: #000;
+    border-radius: 7px;
+}
+.gameDiv{
+    background-color: crimson;
+    width: 80%;
+    min-height: 60rem;
+    border-radius: 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gameDiv>div{
+    border-radius: 19px;
+    height: 28rem;
+    background-color: aquamarine;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.emptyDiv{
+    width: 5rem;
+    height: 15rem;
+}
+.bigImgDiv{
+    height: 17rem;
+    width: 17rem;
+    display: inline-block;
+
+    
+}
+.bigImgDiv img{
+    width: 100%;
+}
+.otherImgDiv{
+    display: inline-block;
+
+    width: 5rem;
+    height: 15rem;
+}
+.choices2{
+    cursor: pointer;
+    border-radius: 50%;
+    width: 5rem;
+
+    height: 5rem;
+}
+.choices2 img{
+    width: 100%;
+}
+.choices2:nth-child(2) img,.choices2:nth-child(5) img{
+    width: 90%;
+    margin-left: 0.3rem;
+}
+.choices2:nth-child(3) img,.choices2:nth-child(6) img{
+    margin-top: 0.5rem;
+    width: 90%;
+    margin-left: 0.3rem;
+}
+.bigImgDiv img:nth-child(1) {
+    animation: rotate 0.6s linear infinite;
+}
+  
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(70deg);
+    }
+}
+#choosed{
+    display: none;
+}
+#choosed2{
+    display: none;
+}
+
+#playerScoreSec{
+    background-color: cadetblue;
+    width: 3rem;
+}
+#robotScoreSec{
+    background-color: burlywood;
+    width: 3rem;
+}
+#finishGameButton{
+    margin-top: 1rem;
+    width: 14rem;
+    height: 4.0rem;
+    background: linear-gradient(to right, rgb(249, 66, 255),rgb(178, 45, 183) ,#5d5dfb);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.5rem;
+    border: 2px solid #fff;
+}
+#finishGameButton:hover{
+    transition: 0.3s;
+    font-size: 1.4rem;
+    background: none;
+    background-color: #000;
+    border-radius: 7px;
+}
+
+.finishedGameBox{
+    background-color: crimson;
+    width: 80%;
+    min-height: 70rem;
+    border-radius: 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.finishedGameBox h1{
+    font-size: 3.5rem;
+}
+.finishedGameBox>div h1{
+    margin: 2rem 2rem;
+    font-size: 2rem;
+}
+#finishedPlayerSc,#finishedRobotSc{
+    font-size: 6rem;
+    color: burlywood;
+}
+
+#finishedPlayerSc{
+    color: cadetblue;
+}
+#playAgainButton{
+    margin-top: 1rem;
+    width: 14rem;
+    height: 4.0rem;
+    background: linear-gradient(to right, rgb(249, 66, 255),rgb(178, 45, 183) ,#5d5dfb);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.5rem;
+    border: 2px solid #fff;
+}
+#playAgainButton:hover{
+    transition: 0.3s;
+    font-size: 1.4rem;
+    background: none;
+    background-color: #000;
+    border-radius: 7px;
+}
+
+@media screen and (min-width:950px) {
+    html{
+        font-size: 10px;
+    }
+    .gameDiv{
+        flex-direction: row;
+        min-height: 40rem;
+        justify-content: space-around;
+    }
+    .gameDiv>div{
+        width: 40%;
+        margin-right: 20px;
+        padding: 0;
+    }
+    .finishedGameBox{
+        
+        min-height: 50rem;
+        
+    }
+    .gameDiv>h1{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .gameDiv section{
+        margin-right: 15px;
+        margin-left: 5px;
+    }
+    
+}
+@media screen and (min-width:1200px) {
+    html{
+        font-size: 11.5px;
+    }
+    
+}
+@media screen and (min-width:1300px) {
+    html{
+        font-size: 13px;
+    }
+}
+@media screen and (min-width:1400px) {
+    html{
+        font-size: 15px;
+    }    
+}
